@@ -9,9 +9,9 @@ import {
   Typography,
 } from "@mui/material";
 import ReorderIcon from "@mui/icons-material/Reorder";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Link from "next/link";
+import AccountButton from "./account-button/account-button";
 import styles from "./index-header.module.css";
 
 export default function IndexHeader() {
@@ -31,9 +31,7 @@ export default function IndexHeader() {
             <TextField label="Search product" variant="standard" />
           </Stack>
           <Stack direction="row" spacing={2}>
-            <IconButton>
-              <AccountCircleIcon fontSize="large" />
-            </IconButton>
+            <AccountButton />
             <IconButton>
               <ShoppingCartIcon fontSize="large" />
             </IconButton>
